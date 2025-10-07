@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../components/header/Header';
-import Footer from '../components/header/Footer';
+import Footer from '../components/footer/Footer';
 import { Outlet } from 'react-router';
 
 const Root = () => {
     return (
-        <div>
+        <div className='container mx-auto'>
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
