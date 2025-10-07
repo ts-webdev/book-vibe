@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Header = () => {
     const link = <>
-        <li className='cursor-pointer hover:bg-gray-200 py-2 px-3'>Home</li>
-        <li className='cursor-pointer hover:bg-gray-200 py-2 px-3'>Listed Books</li>
+        <Link to={'/'}><li className='cursor-pointer hover:bg-gray-200 py-2 px-3'>Home</li></Link>
+        <Link to={'/listed-books'}><li className='cursor-pointer hover:bg-gray-200 py-2 px-3'>Listed Books</li></Link>
         <li className='cursor-pointer hover:bg-gray-200 py-2 px-3'>Pages to Read</li>
     </>
     return (
